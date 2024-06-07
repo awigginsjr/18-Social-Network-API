@@ -1,0 +1,20 @@
+{
+  "name": "18-social-network-api",
+  "version": "1.0.0",
+  "description": "An API for a social networking web application that allows users to share their thoughts, react to friends' posts, and manage their friend list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Anthony Wiggins Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
