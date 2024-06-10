@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 // Import the thought controller for different routes
-const { getUsers, getSingleUser, createUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/userControllers.js');  
+const { getUsers, getSingleUser, createUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/userControllers');  
 
 // /api/users endpoint
 router.route('/')

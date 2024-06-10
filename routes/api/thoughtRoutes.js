@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 // Import the thought controller for different routes
-const { getThoughts, getSingleThought, createThought, updateThought, deleteThought, addReaction, deleteReaction } = require('../../controllers/thoughtControllers.js');  
+const { getThoughts, getSingleThought, createThought, updateThought, deleteThought, addReaction, deleteReaction } = require('../../controllers/thoughtControllers');  
 
 // /api/thoughts endpoint
 router.route('/')

@@ -2,7 +2,7 @@ const { User, Thought } = require('../models'); // Import the User and Thought m
 
 module.exports = { // Export the user controller
 
-    getUser: async (req, res) => { // GET all users
+    getUsers: async (req, res) => { // GET all users
         try {
             const dbUserData = await User.find().populate('thoughts').populate('friends').select('-__v'); // Find all users and populate their thoughts and friends
             res.json(dbUserData);
