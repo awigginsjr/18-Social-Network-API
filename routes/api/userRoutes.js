@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 // Import the thought controller for different routes
-const { getUsers, getUserById, createUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/userControllers.js');  
+const { getUsers, getSingleUser, createUser, updateUser, deleteUser, addFriend, deleteFriend } = require('../../controllers/userControllers.js');  
 
 // /api/users endpoint
 router.route('/')
@@ -11,7 +11,7 @@ router.route('/')
 
 // /api/users/:id endpoint
 router.route('/:id')
-    .get(getUserById) // GET a single user by its _id
+    .get(getSingleUser) // GET a single user by its _id
     .put(updateUser) // PUT to update a user by its _id
     .delete(deleteUser); // DELETE to remove a user by its _id
 

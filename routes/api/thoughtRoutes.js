@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 // Import the thought controller for different routes
-const { getThoughts, getThoughtById, createThought, updateThought, deleteThought, addReaction, deleteReaction } = require('../../controllers/thoughtControllers.js');  
+const { getThoughts, getSingleThought, createThought, updateThought, deleteThought, addReaction, deleteReaction } = require('../../controllers/thoughtControllers.js');  
 
 // /api/thoughts endpoint
 router.route('/')
@@ -11,7 +11,7 @@ router.route('/')
 
 // /api/thoughts/:id endpoint
 router.route('/:id')
-    .get(getThoughtById) // GET a single thought by its _id
+    .get(getSingleThought) // GET a single thought by its _id
     .put(updateThought) // PUT to update a thought by its _id
     .delete(deleteThought); // DELETE to remove a thought by its _id
 
